@@ -724,6 +724,7 @@ footer {
     font-family: 'Great Vibes', cursive;
     letter-spacing: 6px;
     margin-bottom: 10px;
+    /* border: solid; */
 }
 
 .snsBlock {
