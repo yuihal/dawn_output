@@ -13,8 +13,7 @@
 <body>
     <header>
         <!-- ファーストビューの要素が入ります -->
-        <!-- グローバルナビゲーション -->
-        <!-- レスポンシブ -->
+        <!-- PCのグローバルナビゲーション -->
         <nav class="g-navi">
             <div class="container nav-wrapper">
                 <ul>
@@ -25,6 +24,18 @@
                     <li class="nav-item"><a href="#store">STORE</a></li>
                     <li class="nav-item"><a href="#contact">CONTACT</a></li>
                 </ul>
+            </div>
+        </nav>
+        <!-- SPのグローバルナビゲーション -->
+        <nav class="g-navi-sp">
+            <div class="spLogo">
+                <p class="logoTitle">DAWN macaron</p>
+            </div>
+            <!--ハンバーガメニュー-->
+            <div class="menuTrigger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
@@ -168,15 +179,15 @@
             </div>
             <div class="lineupMenu">
                 <ul class="filter">
-                    <li class="lineupTab active"><a class="ranking" href="#">ranking</a></li>
-                    <li class="lineupTab"><a class="tea" href="#">tea time</a></li>
-                    <li class="lineupTab"><a class="party" href="#">party</a></li>
-                    <li class="lineupTab"><a class="gifts" href="#">gifts</a></li>
-                    <li class="lineupTab"><a class="season" href="#">season</a></li>
+                    <li class="lineupTab active"><a class="ranking" data-filter="ranking" href="#">ranking</a></li>
+                    <li class="lineupTab"><a class="tea" data-filter="tea" href="#">tea time</a></li>
+                    <li class="lineupTab"><a class="party" data-filter="party" href="#">party</a></li>
+                    <li class="lineupTab"><a class="gifts" data-filter="gifts" href="#">gifts</a></li>
+                    <li class="lineupTab"><a class="season" data-filter="season" href="#">season</a></li>
                 </ul>
             </div>
             <div class="lineupArea">
-                <div class="lineupProduct">
+                <div class="lineupProduct" data-category="tea">
                     <div class="lineupImage">
                         <img src="./image/macaron01.png" alt="レモン">
                     </div>
@@ -188,7 +199,7 @@
                         <p class="lineupText aboutText">レモンの爽やかな酸味の切れ味が絶妙な逸品です。</p>
                     </div>
                 </div>
-                <div class="lineupProduct">
+                <div class="lineupProduct" data-category="party">
                     <div class="lineupImage">
                         <img src="./image/macaron02.png" alt="ピスタチオ">
                     </div>
@@ -200,7 +211,7 @@
                         <p class="lineupText aboutText">香り・コク・旨みが凝縮したピスタチオならではの気品漂う逸品です。</p>
                     </div>
                 </div>
-                <div class="lineupProduct">
+                <div class="lineupProduct" data-category="gifts">
                     <div class="lineupImage">
                         <img src="./image/macaron03.png" alt="ストロベリー">
                     </div>
