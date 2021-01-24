@@ -715,7 +715,7 @@ footer {
 }
 
 .menu {
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 .logo {
@@ -951,5 +951,66 @@ footer small {
     }
     .moreLineup {
         margin-top: 0;
+    }
+    /* パッケージエリア */
+    .packageArea {
+        flex-wrap: wrap;
+    }
+    .packageLineup {
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+    .packageLineup:last-child {
+        margin-bottom: 0px;
+    }
+    /* 店舗情報 */
+    .storeArea {
+        flex-wrap: wrap;
+    }
+    .mapImage,
+    .cafeText {
+        flex-basis: 100%;
+    }
+    .mapImage {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .cafeText {
+        text-align: center;
+    }
+    .storeName {
+        margin-bottom: 20px;
+    }
+    address {
+        line-height: 2.4;
+    }
+    /* フッター */
+    .footerContent {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .logoArea {
+        /* 同じ横幅で1列に並べる */
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+    .logo {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .snsBlock {
+        /* アイコンを中央寄せ */
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .menu {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .menu:last-child {
+        margin-bottom: 0px;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
     }
 }
